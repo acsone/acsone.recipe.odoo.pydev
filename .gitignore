@@ -1,0 +1,8 @@
+bin
+include
+lib
+local
+*eggs
+*egg-info
+**/*.pyc
+*~
