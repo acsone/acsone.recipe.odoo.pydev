@@ -194,4 +194,4 @@ class Recipe(ServerRecipe):
 
     def update(self):
         """Updater"""
-        pass
+        self.install()
