@@ -116,8 +116,8 @@ class Recipe(ServerRecipe):
         desc = self.openerp_scripts.get(qualified_name)
         self._extend_initialization_script(desc)
 
-    def _install_interpreter(self):
-        super(Recipe, self)._install_interpreter(self._initialization)
+    #def _install_interpreter(self):
+    #    super(Recipe, self)._install_interpreter(self._initialization)
 
     def _simulate_addons_module(self):
         """Use the collective.recipe.omlette to create the right module structure
