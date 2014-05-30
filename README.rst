@@ -2,8 +2,9 @@
 acsone.recipe.odoo.pydev
 ========================
 
-A `buildout <https://pypi.python.org/pypi/zc.buildout>`_ 
-recipe to generate `Odoo <https://www.odoo.com>`_ 
+An extension to `anybox.recipe.openerp
+<http://pythonhosted.org/anybox.recipe.openerp>`_
+that generates `Odoo <https://www.odoo.com>`_ 
 projects for the `Eclipse PyDev <http://pydev.org/>`_ IDE.
 
 .. contents::
@@ -16,7 +17,7 @@ What it is
 ==========
 
 This buildout  recipe is
-an extension to the fully featured recipe developed by Anybox
+an extension to the fully featured recipe developed by Anybox:
 `anybox.recipe.openerp
 <http://pythonhosted.org/anybox.recipe.openerp>`_.
 
@@ -25,8 +26,8 @@ pointing to all dependencies required to develop, run
 and debug your `Odoo <https://www.odoo.com>`_ server 
 as well as your own addons.
 
-The generated project fully configured so as to support 
-pep8 import checks, auto completion
+The generated project is fully configured, including a preset
+PYTHONPATH so as to support debugging, pep8 import checks, auto completion
 
 How to use it
 =============
@@ -80,9 +81,10 @@ development environment in an other file such as ``devel.cfg``::
     python-interpreter = Default
     eggs += any_additional_egg_you_want
 
-Then prepare your virtualenv
+Then prepare your virtualenv and install zc.buildout
 
-    $ virtualenv .
+    $ virtualenv
+    
     $ bin/pip install zc.buildout
     
 To run the recipe and generate your project, run
