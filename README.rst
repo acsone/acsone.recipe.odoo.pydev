@@ -2,12 +2,12 @@
 acsone.recipe.odoo.pydev
 ========================
 
+|Version|
+
 An extension to `anybox.recipe.openerp
 <http://pythonhosted.org/anybox.recipe.openerp>`_
 that generates `Odoo <https://www.odoo.com>`_ 
 projects for the `Eclipse PyDev <http://pydev.org/>`_ IDE.
-
-|Version| |Downloads|
 
 .. contents::
 
@@ -134,3 +134,7 @@ addons_path (it's the case with the generated project definition),
 it's not possible to start the server due to import errors. To avoid
 this problem, the recipe adds to the generated scripts , specific code 
 to remove parts of sys.path that are also in addons_path.
+
+.. |Version| image:: https://badge.fury.io/py/acsone.recipe.odoo.pydev.svg?
+   :target: http://badge.fury.io/py/acsone.recipe.odoo.pydev
+   
