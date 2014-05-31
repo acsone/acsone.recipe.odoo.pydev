@@ -7,6 +7,8 @@ An extension to `anybox.recipe.openerp
 that generates `Odoo <https://www.odoo.com>`_ 
 projects for the `Eclipse PyDev <http://pydev.org/>`_ IDE.
 
+|Version| |Downloads|
+
 .. contents::
 
 - Code repository: http://github.com/acsone/acsone.recipe.odoo.pydev
