@@ -218,7 +218,7 @@ Available functionalities
 :data-x: r-2500
 :data-y: r0
 
-Thanh you!!
+Thank you!!
 ===========
 
 `anybox.recipe.openerp <http://pythonhosted.org/anybox.recipe.openerp>`_ http://pythonhosted.org/anybox.recipe.openerp
