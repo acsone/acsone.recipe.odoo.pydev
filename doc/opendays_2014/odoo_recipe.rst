@@ -4,11 +4,11 @@
 
 ----
 
-Buildout / PyDev
+Buildout + PyDev
 ================
 
-Your development environment in 5 minutes!
-------------------------------------------
+Your Odoo development environment in 5 minutes!
+-----------------------------------------------
 
 ----
 
@@ -24,11 +24,11 @@ Your development environment in 5 minutes!
 
 :data-y: r1000
 
-* Install python extra packages
+* install python extra packages
 
 * get Odoo
 
-* get exta addons
+* get extra addons
 
 * configure Odoo
 
@@ -39,19 +39,19 @@ Your development environment in 5 minutes!
 :data-rotate: 90
 
 
-*Doesn't work ...*
+*Doesn't work...*
 
 ----
 
-* fixes addons-path
+* fix addons-path
 
 * try to start Odoo server again
 
-* doesn't work
+* *doesn't work...*
 
-* install extra python dependecy for addons
+* install additional python dependencies for addons
 
-* doesn't work dependency version mismatch...
+* *doesn't work: dependency version mismatch...*
 
 * …
 
@@ -61,7 +61,9 @@ Your development environment in 5 minutes!
 :data-y: r500
 :data-scale: 0.1
 
-* YES!! the server start! It's time to configure my dev env...*
+YES!! The server starts! 
+
+It's time to configure my dev env...*
 
 .. image:: images/sleeping.png
 
@@ -70,8 +72,8 @@ Your development environment in 5 minutes!
 :data-x: r-800
 :data-scale: 1
 
-5 minutes
-=========
+5 minutes:
+==========
 
 .. note::
 
@@ -135,14 +137,14 @@ What is buildout
 anybox.recipe.openerp
 =====================
 
-A fully featured recipe developed by Anybox for Odoo
-----------------------------------------------------
+A fully featured Odoo recipe developed by Anybox
+------------------------------------------------
 
 * quickly create an OpenERP instance in a predictable and repeatable way
 
 * use any OpenERP version and any addons from any repositories (bzr, svn, hg, git)
 
-* manage you OpenERP configuration from your buildout
+* manage your OpenERP configurations
 
 * ...
 
@@ -221,9 +223,9 @@ Available functionalities
 Thank you!!
 ===========
 
-`anybox.recipe.openerp <http://pythonhosted.org/anybox.recipe.openerp>`_ http://pythonhosted.org/anybox.recipe.openerp
+`anybox.recipe.openerp <https://pypi.python.org/pypi/anybox.recipe.openerp.pydev>`_ https://pypi.python.org/pypi/anybox.recipe.openerp.pydev
 
-`acsone.recipe.odoo.pydev <https://github.com/acsone/acsone.recipe.odoo.pydev>`_ https://github.com/acsone/acsone.recipe.odoo.pydev
+`acsone.recipe.odoo.pydev <https://pypi.python.org/pypi/acsone.recipe.odoo.pydev>`_ https://pypi.python.org/pypi/acsone.recipe.odoo.pydev
 
 .. note::
 
