@@ -95,22 +95,25 @@ It's time to configure my dev env...*
 
 ----
 
-:data-rotate: 180
-:data-y: r1000
+:data-y: r1200
 
 .. image:: images/project_import.png
 
 ----
 
+:data-y: r1200
+
 .. image:: images/project_loaded.png
 
 ----
+
+:data-y: r1400
 
 .. image:: images/hourra.png
 
 ----
 
-:data-y: r1000
+:data-y: r1200
 
 What is buildout
 ================
