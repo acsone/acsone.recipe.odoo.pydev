@@ -64,6 +64,12 @@ class Recipe(ServerRecipe):
         self._omelette_path = os.path.join(self._wd_path,
                                            self.buildout['buildout']['parts-directory'],
                                            self._omelette_name)
+        
+
+    @property
+    def odoo_git_addons(self):
+        # These addons are also part of the Github branch
+        return join(self.openerp_dir, 'addons')
 
     @property
     def _initialization(self):
@@ -87,10 +93,12 @@ class Recipe(ServerRecipe):
                                          self._initialization))
         desc['initialization'] = initialization
 
-    def retrieve_addons(self):
-        ServerRecipe.retrieve_addons(self)
+    def finalize_addons_paths(self):
+        ServerRecipe.finalize_addons_paths(self)
         self.src_paths = [src for src in self.addons_paths if not src.startswith(self.openerp_dir) and os.path.exists(src)]
         self.src_paths.append(self.openerp_dir)
+        if self.is_git_layout:
+            self.src_paths.append(self.odoo_git_addons)
 
     def _register_test_script(self, qualified_name):
         """Register the main test script for installation.
@@ -132,6 +140,9 @@ class Recipe(ServerRecipe):
             if path.startswith(self.openerp_dir):
                 continue
             packages.append(path + " ./openerp/addons")
+        if self.is_git_layout:
+            packages.append(self.odoo_git_addons + " ./openerp/addons")
+            
         options = {"packages": "\n".join(packages),
                    "recipe": "collective.recipe.omelette"}
         recipe = Recipe(self.buildout, self._omelette_name, options)
