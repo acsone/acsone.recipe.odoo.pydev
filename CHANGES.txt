@@ -1,5 +1,10 @@
+1.2 (unreleased)
+----------------
+
+
 1.1 (2014-09-08)
 ----------------
+
 - `github #1 <https://github.com/acsone/acsone.recipe.odoo.pydev/issues/1>`_: 
   support new addons layout on github. The eclipse syntax analyser
   also scan addons directory at root of the cloned directory if exists. BTW,
