@@ -1,3 +1,11 @@
+1.1 (unreleased)
+----------------
+- github #1: support new addons layout on github. The eclipse syntax analyser
+also scan addons directory at root of the cloned directory if exists. BTW,
+code completion is fully functionnal with odoo sources distribution from 
+github
+
+
 1.0 (2014-05-30)
 ----------------
 
