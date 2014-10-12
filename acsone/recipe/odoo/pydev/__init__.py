@@ -73,14 +73,20 @@ class Recipe(ServerRecipe):
 
     @property
     def _initialization(self):
-        return os.linesep.join((
-                                "",
-                                "#REMOVE addons from sys.path",
-                                "import os",
-                                "addons_paths = %s" % self.addons_paths,
-                                "addons_paths.append('%s')" % self._omelette_path,
-                                "sys.path[:] = [ p for p in sys.path if not os.path.abspath(p) in addons_paths ]",
-                                ""))
+        return os.linesep.join(
+            ("",
+             "if sys.gettrace() != None:",
+             "    # we are in debug mode ensure that odoo don't try to start gevent",
+             "    print 'Odoo started in debug mode. Prevents from running evented server'",
+             "    import openerp",
+             "    openerp.evented = False",
+             "",
+             "#REMOVE addons from sys.path",
+             "import os",
+             "addons_paths = %s" % self.addons_paths,
+             "addons_paths.append('%s')" % self._omelette_path,
+             "sys.path[:] = [ p for p in sys.path if not os.path.abspath(p) in addons_paths ]",
+             ""))
 
     def _extend_initialization_script(self, desc):
         """Remove scr path from sys path
