@@ -1,6 +1,11 @@
-1.2 (unreleased)
+1.2 (2014-10-13)
 ----------------
 
+- `github #4 <https://github.com/acsone/acsone.recipe.odoo.pydev/issues/4>`_:
+  Pydev > 3.7 and Odoo 8.0 compatibility
+
+- `github #3 <https://github.com/acsone/acsone.recipe.odoo.pydev/issues/3>`_:
+  Incorrect Pythonpath in Eclipse
 
 1.1 (2014-09-08)
 ----------------
