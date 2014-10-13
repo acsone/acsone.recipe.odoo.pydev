@@ -63,8 +63,8 @@ Another example using git and Odoo V8::
 
     [openerp]
     recipe = anybox.recipe.openerp[bzr]:server
-    version = git https://github.com/odoo/odoo.git odoo master
-    addons = local parts/odoo/addons
+    version = git https://github.com/odoo/odoo.git odoo 8.0
+    addons = ...
     ....
 
 
