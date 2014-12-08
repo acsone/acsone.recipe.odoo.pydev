@@ -9,7 +9,7 @@ from setuptools import setup, find_packages
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-version = '1.3dev'
+version = '2.0dev'
 
 long_description = (
     read('README.rst')
@@ -35,8 +35,8 @@ long_description = (
 entry_point = 'acsone.recipe.odoo.pydev:Recipe'
 entry_points = {"zc.buildout": ["default = %s" % entry_point]}
 
-requires = ['setuptools', 'zc.buildout', 'anybox.recipe.openerp', 'collective.recipe.omelette', ]
-tests_require = requires + ['nose', 'bzr', 'anybox.recipe.openerp[bzr]', 'zope.testing', 'manuel'],
+requires = ['setuptools', 'zc.buildout', 'anybox.recipe.odoo', 'collective.recipe.omelette', ]
+tests_require = requires + ['nose', 'bzr', 'anybox.recipe.odoo[bzr]', 'zope.testing', 'manuel'],
 
 setup(name='acsone.recipe.odoo.pydev',
       version=version,
@@ -67,7 +67,7 @@ setup(name='acsone.recipe.odoo.pydev',
       tests_require=tests_require,
       extras_require = {
         'tests': tests_require,
-        'bzr' : ['anybox.recipe.openerp[bzr]'],
+        'bzr' : ['anybox.recipe.odoo[bzr]'],
       },
       test_suite='acsone.recipe.odoo.pydev.tests.test_docs.test_suite',
       entry_points=entry_points,

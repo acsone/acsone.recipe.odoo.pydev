@@ -33,8 +33,8 @@ import logging
 import subprocess
 import zc.buildout
 import zc.recipe.egg
-from anybox.recipe.openerp import devtools
-from anybox.recipe.openerp.server import ServerRecipe
+from anybox.recipe.odoo import devtools
+from anybox.recipe.odoo.server import ServerRecipe
 
 import xml.etree.ElementTree as ET
 import shutil
