@@ -76,7 +76,7 @@ development environment in an other file such as ``devel.cfg``::
     [pydevproject]
     <= openerp
     recipe = acsone.recipe.odoo.pydev
-    name = my_project_name
+    project-name = my_project_name
     python-version = python 2.7
     python-interpreter = Default
     eggs += any_additional_egg_you_want
